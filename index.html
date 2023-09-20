@@ -6,16 +6,43 @@
     <title>Mon Portfolio</title>
     <link rel="stylesheet" href="styles.css">
     <script src="script.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700&family=Montserrat:wght@100&family=Nunito:wght@300&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/71b7bd0cbb.js" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
 </head>
 
 <body>
 
+
+  
+    
+    
     <div class="top">
-        <h1 class="hello"> Bonjour
-            <p>Je suis Alexandre Chassagne, <br>
-                Developpeur Web Junior.</p>
+        <link href="https://fonts.googleapis.com/css?family=Raleway:200,100,400" rel="stylesheet" type="text/css" />
+        <h1>Bonjour! <br>
+          <span
+             class="txt-rotate"
+             data-period="2000"
+             data-rotate='[ "Je suis Alexandre Chassagne...", "Je suis développeur web..." ]'></span>
         </h1>
     </div>
+    <script>
+
+        $(window).scroll(function(){
+            $(".top").css("opacity", 1 - $(window).scrollTop() / 390)
+        });
+
+    </script>
+    <!-- <nav class="nav">
+        <ul>
+          <li>Home</li>
+          <li>About</li>
+          <li>Contact</li> 
+        </ul>
+      </nav> -->
     <nav class="navbar">
         <div class="nav-links">
             <ul>
@@ -34,38 +61,66 @@
         <div class="box une">
             <img src="pictures/moi.jpg" alt="Yo" class="yo">
         </div>
-        <div class="box deux">
-            <h2 id="presentation">Présentation</h2>
+        <div class="box deux" id="presentation">
+            <h2>Présentation</h2>
             <p>
                 Développeur passionné dans le domaine du web depuis plus de 6 ans,
-                actuellement développeur Web.
+                actuellement développeur Web. <br>
                 Je conçois et réalise des sites web du cahier des charges à la mise en ligne.
-                Je developpe aussi en JAVA, ce qui me permet de développer des applications mobiles android
+                Je developpe aussi en JAVA, <br> ce qui me permet de développer des applications mobiles android.
             </p>
             <p>
                 J'ai quelques projet intéressants à voir.
-                Vous souhaitez avoir mon CV au format PDF c'est par <a href="">ici</a>.
+            </p>
+            <p>
+                Vous souhaitez avoir mon CV au format PDF c'est par <a href="dl/CV Alexandre Chassagne 2023 - DevWebJr (1).pdf">ici</a>.
             </p>
         </div>
-        <div class="box trois">
+        <div class="box trois" id="experiences">
+            <h2>Expériences</h2>
             <ul>
-                <li>Auto-Entrepreneur</li>
-                <li>Conseiller Clientèle</li>
-                <li>Animateur</li>
+                <li>
+                    <p>Auto-Entrepreneur : Ateliers MAO & DJ</p>
+                </li>
+                <li>
+                    <p>Conseiller Clientèle / Commercial: En B to B et B to C <br>
+                    chez France Attelage (n°1 de l'attelage remorque)
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        Animateur en structre d'accueil et colonies de vacances.
+                    </p>
+                </li>
             </ul>
         </div>
         <div class="box quatre">
-            <h2 id="experiences">Expériences</h2>
+            <img src="icons/vecteezy_employment-performance-vector-icon-design_21076301.jpg" alt="experience" class="experience">
         </div>
         <div class="box cinq">
-            <h2 id="diplomes">Diplomes et Formations</h2>
+            <img src="icons/07_Diploma.jpg" alt="diplomes" class="diplomes">
         </div>
-        <div class="box six">
+        <div class="box six" id="diplomes">
+            <h2>Diplomes et Formations</h2>
             <ul>
-                <li>Formation Webmestre (CNAM de Lille)</li>
-                <li>BTS Négociation & Relation Client (Lycée Louis Pasteur de Lille)</li>
-                <li>BAC Sciences & Techniques de Gestion (LICP de Tourcoing)</li>
-                <li>BAFA (UCPA de Lille)</li>
+                <li>
+                    <p>
+                        Formation Webmestre (CNAM de Lille)
+                    </p>
+                </li>
+                <li><p>
+                    BTS Négociation & Relation Client (Lycée Louis Pasteur de Lille)
+                </p></li>
+                <li>
+                    <p>
+                        BAC Sciences & Techniques de Gestion (LICP de Tourcoing)
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        BAFA (UCPA de Lille)
+                    </p>
+                </li>
             </ul>
         </div>
     </div>
@@ -76,10 +131,26 @@
         <div class="box sept">
             <h3>Logiciels</h3>
             <ul>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
+                <li>
+                    <p>
+                        MAO, DJ & PAO
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        Visual Studio Code
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        SAP, Prestashop
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        Microsoft Office
+                    </p>
+                </li>
             </ul>
         </div>
         <div class="box sept">
@@ -94,10 +165,9 @@
         <div class="box sept">
             <h3>Langues Vivantes</h3>
             <ul>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
+                <li>Français</li>
+                <li>Anglais</li>
+                <li>Espagnol</li>
             </ul>
         </div>
         <div class="box sept">
@@ -124,25 +194,47 @@
             <h3>Site 3</h3>
         </div>
     </div>
-    <div>
-        <h2>Démarons un Projet Ensemble</h2>
+    <div id="contacts">
+        <h2>Démarrons un Projet Ensemble</h2>
         <h3>N'hésitez pas à me contacter :</h3>
-        <form action="" id="contacts"></form>  
+        <form action="" method="get" id="contacts">
+            <fieldset>
+                <input type="text" name="nom" id="nom" placeholder="Nom"> <br>
+                <input type="email" name="email" id="email" placeholder="e-mail" autofocus required>
+            </fieldset>
+            <fieldset>
+                <textarea name="message" id="message" cols="30" rows="10" placeholder="Votre message"></textarea>
+            </fieldset>
+            <fieldset>
+                <input type="submit" value="Envoyer" class="envoyer" href="mailto:chassagne.alexandre@gmail.com">
+            </fieldset>
+            
+            
+        </form>  
     </div>
    
    
 
 
 
-    <!-- Job -->
+    <!-- Reseaux sociaux etc -->
     <footer>
         <div>
-            <h2>Mes réseaux</h2>
+            <div class="logos">
+                
+                <a href="https://www.linkedin.com/in/a-chassagne59"><ion-icon name="logo-linkedin"></ion-icon></a>
+                <a href="https://github.com/ACH90"><ion-icon name="logo-github"></ion-icon></a>
+                <ion-icon name="logo-instagram"></ion-icon>
+
+            </div>
         </div>
-        <div>
-            <a href="">Télécharger Mon CV</a>
+        <div class="cv">
+            <a href="dl/CV Alexandre Chassagne 2023 - DevWebJr (1).pdf" target="_blank">Télécharger Mon CV</a>
         </div>
     </footer>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
 </body>
 
 </html>
