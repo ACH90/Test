@@ -11,14 +11,14 @@
 <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700&family=Montserrat:wght@100&family=Nunito:wght@300&display=swap" rel="stylesheet">
 <script src="https://kit.fontawesome.com/71b7bd0cbb.js" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
 <body>
 
 
   
-    
+   
     
     <div class="top">
         <link href="https://fonts.googleapis.com/css?family=Raleway:200,100,400" rel="stylesheet" type="text/css" />
@@ -56,7 +56,7 @@
         </div>
     </nav>
 
-
+<main>
     <div class="conteneur">
         <div class="box une">
             <img src="pictures/moi.jpg" alt="Yo" class="yo">
@@ -64,10 +64,9 @@
         <div class="box deux" id="presentation">
             <h2>Présentation</h2>
             <p>
-                Développeur passionné dans le domaine du web depuis plus de 6 ans,
-                actuellement développeur Web. <br>
+                Développeur passionné dans le domaine du web depuis plus de 4 ans et actuellement développeur Web. <br>
                 Je conçois et réalise des sites web du cahier des charges à la mise en ligne.
-                Je developpe aussi en JAVA, <br> ce qui me permet de développer des applications mobiles android.
+            <!-- <br> ce qui me permet de développer des applications mobiles android. -->
             </p>
             <p>
                 J'ai quelques projet intéressants à voir.
@@ -123,75 +122,36 @@
                 </li>
             </ul>
         </div>
-    </div>
-    <div id="competences">
-        <h2>Compétences</h2>
-    </div>
-    <div class="conteneur2">
-        <div class="box sept">
-            <h3>Logiciels</h3>
-            <ul>
-                <li>
-                    <p>
-                        MAO, DJ & PAO
-                    </p>
-                </li>
-                <li>
-                    <p>
-                        Visual Studio Code
-                    </p>
-                </li>
-                <li>
-                    <p>
-                        SAP, Prestashop
-                    </p>
-                </li>
-                <li>
-                    <p>
-                        Microsoft Office
-                    </p>
-                </li>
-            </ul>
+        <div class="box sept" id="logiciels">
+            <h2>Logiciels</h2>
+            <img src="icons/Logos logs.png" alt="logs" id="logs">
         </div>
-        <div class="box sept">
-            <h3>Languages informatiques</h3>
-            <ul>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-            </ul>
+        <div class="box huit" id="languages">
+            <h2>Languages informatiques</h2>
+            <img src="icons/Lang.png" alt="lang" id="langinf">
         </div>
-        <div class="box sept">
-            <h3>Langues Vivantes</h3>
-            <ul>
-                <li>Français</li>
-                <li>Anglais</li>
-                <li>Espagnol</li>
-            </ul>
+        <div class="box neuf" id="lang">
+            <h2>Langues Vivantes</h2>
+            <img src="icons/flags.png" alt="flags" id="flags">
         </div>
-        <div class="box sept">
-            <h3>Compétences Personnelles</h3>
-            <ul>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-            </ul>
+        <div class="box dix" id="skill">
+            <h2>Soft Skills</h2>
+            <img src="icons/Skills.png" alt="skills" id="skills">
         </div>
     </div>
     <div id="realisations">
         <h2>Réalisations</h2>
     </div>
      <div class="conteneur3">
-        <div class="box sept">
-            <h3>Site 1</h3>
+        <div class="real1">
+            <a href="https://www.pole-emploi.fr/accueil/">
+                <img src="pictures/poleemploi.png" alt="poleemploi" id="poleemp">
+            </a>
         </div>
-        <div class="box sept">
-            <h3>Site 2</h3>
-        </div>
-        <div class="box sept">
-            <h3>Site 3</h3>
+        <div class="real2">
+            <a href="https://www.attackmagazine.com/">
+                <img src="pictures/attakmag.png" alt="attakmag" id="attackmag">
+            </a>
         </div>
     </div>
     <div id="contacts">
@@ -200,7 +160,7 @@
         <form action="" method="get" id="contacts">
             <fieldset>
                 <input type="text" name="nom" id="nom" placeholder="Nom"> <br>
-                <input type="email" name="email" id="email" placeholder="e-mail" autofocus required>
+                <input type="email" name="email" id="email" placeholder="e-mail" required>
             </fieldset>
             <fieldset>
                 <textarea name="message" id="message" cols="30" rows="10" placeholder="Votre message"></textarea>
@@ -224,7 +184,6 @@
                 
                 <a href="https://www.linkedin.com/in/a-chassagne59"><ion-icon name="logo-linkedin"></ion-icon></a>
                 <a href="https://github.com/ACH90"><ion-icon name="logo-github"></ion-icon></a>
-                <ion-icon name="logo-instagram"></ion-icon>
 
             </div>
         </div>
